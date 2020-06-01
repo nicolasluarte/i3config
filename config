@@ -192,3 +192,7 @@ new_window 1pixel
 # screenshot
 exec --no-startup-id flameshot &
 bindsym $mod+Shift+p exec flameshot gui
+
+# scratch pad
+bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+minus scratchpad show
