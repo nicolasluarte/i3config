@@ -196,3 +196,13 @@ bindsym $mod+Shift+p exec flameshot gui
 # scratch pad
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
+
+# compositor
+# exec_always --no-startup-id picom
+
+# wall paper
+exec --no-startup-id feh --bg-fill --randomize ~/wallpaper
+
+# torrent
+exec --no-startup-id transmission-daemon
+
