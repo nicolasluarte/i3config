@@ -202,4 +202,7 @@ bindsym $mod+Shift+p exec flameshot gui
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 
+# start picom
+exec --no-startup-id picom --config ~/.config/picom/picom.conf
+
 
