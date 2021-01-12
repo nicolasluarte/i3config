@@ -205,4 +205,6 @@ bindsym $mod+minus scratchpad show
 # start picom
 exec --no-startup-id picom --experimental-backends --config ~/.config/picom/picom.conf
 
+# wallpapers
+exec --no-startup-id /usr/bin/feh --randomize --bg-scale ~/.wallpapers/*
 
