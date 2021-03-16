@@ -57,6 +57,9 @@ bindsym $mod+d exec dmenu_run -fn 'Droid Sans Mono-9'
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
+# start pdf opener
+bindsym $mod+Shift+f exec /home/nicoluarte/scripts/pdf_dmenu
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -183,7 +186,7 @@ bindsym $mod+r mode "resize"
 bar {
       	position bottom 
         status_command i3blocks
-	font pango:monospace 10
+	font pango:Fira Code 10
 	colors{
 		background #002b36
 		focused_workspace #fdf6e3 #6c71c4 #fdf6e3
@@ -204,6 +207,10 @@ new_window 1pixel
 # screenshot
 exec --no-startup-id flameshot &
 bindsym $mod+Shift+p exec flameshot gui
+
+# Dmenu config script
+
+bindsym $mod+Shift+g exec $HOME/scripts/dmconf
 
 # scratch pad
 bindsym $mod+Shift+minus move scratchpad
