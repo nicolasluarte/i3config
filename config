@@ -219,8 +219,12 @@ bindsym $mod+minus scratchpad show
 # start picom
 exec --no-startup-id picom --experimental-backends --config ~/.config/picom/picom.conf
 
+# start dunst
+exec --no-startup-id dunst
+
 # wallpapers
 exec --no-startup-id /usr/bin/feh --randomize --bg-scale ~/.wallpapers/*
+
 
 # mpv floating
 for_window [class="mpv"] floating enable
